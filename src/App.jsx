@@ -5,10 +5,9 @@ import { Header, Footer } from "./components";
 import { Home } from "./pages";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div className="font-ubuntu_mono">
       <Header />
 
       <Home />

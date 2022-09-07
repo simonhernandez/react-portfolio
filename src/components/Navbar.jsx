@@ -14,7 +14,7 @@ const Navbar = () => {
       </a>
 
       <div
-        className={`fixed md:hidden top-16 right-0 bottom-0 w-4/5 bg-dark text-white p-4 transition-all flex flex-col justify-between items-center`}
+        className={`fixed ss:hidden top-16 ${toggle ? 'right-0' : 'right-[-80%]'} bottom-0 w-4/5 bg-dark text-white p-4 transition-all duartion-500 flex flex-col justify-between items-center`}
       >
         <ul>
           {navLinks.map((navlink, index) => {
@@ -36,11 +36,14 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className="hidden md:flex justify-between">
+      <div className="hidden ss:flex justify-between">
         <ul className="flex gap-8 mr-8 pr-8 border-r-2 border-primary">
           {navLinks.map((navlink) => {
             return (
-              <li key={navlink.id} className={`${typography.text_sm} font-bold border-b-2 border-transparent hover:border-primary transition-colors`}>
+              <li
+                key={navlink.id}
+                className={`${typography.text_sm} font-bold border-b-2 border-transparent hover:border-primary transition-colors`}
+              >
                 <a href={`#${navlink.id}`}>{navlink.title}</a>
               </li>
             );
@@ -52,6 +55,11 @@ const Navbar = () => {
         </button>
       </div>
 
+      <button className={`toggle-btn ${toggle ? 'toggle' : ''} block ss:hidden`} onClick={() => setToggle((prev) => !prev)}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
     </nav>
   );
 };
