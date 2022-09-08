@@ -26,7 +26,7 @@ const Hero = () => {
         {/* Image Container */}
         <div className="relative">
           <img src={dots} alt="" className="w-1/3 absolute left-1 -top-4" />
-          <img src={simonHero} alt="An image of Simon Hernandez" className="max-w-[673px]" />
+          <img src={simonHero} alt="An image of Simon Hernandez" className="w-full max-w-[673px]" />
           <img src={dots} alt="" className="w-1/3 absolute right-1 bottom-0" />
           <div className="absolute bg-white w-[50px] h-[50px] rounded-full shadow-md flex justify-center items-center left-0 bottom-10 ss:hidden">
             <img src={git_mobile} alt=""/>
