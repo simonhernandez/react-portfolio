@@ -33,6 +33,8 @@ import tailwindcss_mobile from './img/tailwindcss_mobile.png';
 import react_mobile from './img/react_mobile.png';
 import javascript_mobile from './img/javascript_mobile.png';
 import sass_mobile from './img/sass_mobile.png';
+import frontend from './img/frontend.svg';
+import languages_svg from './img/languages.svg';
 
 export {
     html5,
@@ -70,4 +72,6 @@ export {
     react_mobile,
     javascript_mobile,
     sass_mobile,
+    frontend,
+    languages_svg
 }
