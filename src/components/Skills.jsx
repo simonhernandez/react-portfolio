@@ -12,7 +12,7 @@ const Skills = () => {
       className={`${spacing.paddingY} bg-primary_very_light text-center md:text-left`}
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
-        <header>
+        <header className="text-center">
           <h2 className={typography.heading2}>Skills</h2>
         </header>
 
@@ -24,7 +24,7 @@ const Skills = () => {
 
           {/* Text Container */}
           <div className="space-y-4 w-full max-w-[550px] m-auto md:m-0">
-            <h3>Frontend Development</h3>
+            <h3 className={`${typography.heading3} text-primary`}>Frontend Development</h3>
             <p>
               I began my coding journey early on as a college freshman after
               taking a couple of programming courses. <br /> Eventually ended up
@@ -59,7 +59,7 @@ const Skills = () => {
 
           {/* Text Container */}
           <div className="space-y-4 w-full max-w-[550px] m-auto">
-            <h3>Languages</h3>
+            <h3 className={`${typography.heading3} text-primary`}>Languages</h3>
             <p>I speak a total of 3 languages.</p>
             <p>
               Spanish as mother language, English and German at an advanced

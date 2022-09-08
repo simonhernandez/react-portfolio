@@ -9,12 +9,12 @@ export const spacing = {
 }
 
 export const typography = {
-    heading1 : "font-ubuntu_mono text-dark font-bold text-4xl ss:text-6xl",
-    heading2 : "font-ubuntu_mono text-dark font-bold text-2xl ss:text-5xl",
-    heading3 : "font-ubuntu_mono text-dark font-bold text-xl ss:text-4xl",
-    heading4 : "font-ubuntu_mono text-dark font-bold text-xl ss:text-2xl",
-    paragraph: "font-ubuntu_mono text-dark font-normal text-sm ss:text-base",
-    text_sm  : "font-ubuntu_mono text-dark text-xs ss:text-sm",
+    heading1 : "font-ubuntu_mono font-bold text-4xl ss:text-6xl",
+    heading2 : "font-ubuntu_mono font-bold text-2xl ss:text-4xl",
+    heading3 : "font-ubuntu_mono font-bold text-xl ss:text-3xl",
+    heading4 : "font-ubuntu_mono font-bold text-xl ss:text-2xl",
+    paragraph: "font-ubuntu_mono font-normal text-sm ss:text-base",
+    text_sm  : "font-ubuntu_mono text-xs ss:text-sm",
 }
 
 export const flex = {
