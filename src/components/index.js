@@ -9,6 +9,8 @@ import Portfolio from "./Portfolio";
 import Skills from "./Skills";
 import Wrapper from "./Wrapper";
 import Navbar from "./Navbar";
+import Button from "./Button";
+import Socials from "./Socials";
 
 export {
     About,
@@ -22,4 +24,6 @@ export {
     Skills,
     Wrapper,
     Navbar,
+    Button,
+    Socials,
 }

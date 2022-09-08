@@ -23,6 +23,16 @@ import easybank from './img/easybank.png';
 import githubsearch from './img/githubsearch.png';
 import iconSun from './img/icon-sun.svg';
 import iconMoon from './img/icon-moon.svg';
+import instagram from './img/instagram.svg';
+import linkedin from './img/linkedin.svg';
+import github_svg from './img/github.svg';
+import codepen from './img/codepen.svg';
+import simonHero from './img/simon-hero.png';
+import git_mobile from './img/git_mobile.png';
+import tailwindcss_mobile from './img/tailwindcss_mobile.png';
+import react_mobile from './img/react_mobile.png';
+import javascript_mobile from './img/javascript_mobile.png';
+import sass_mobile from './img/sass_mobile.png';
 
 export {
     html5,
@@ -50,4 +60,14 @@ export {
     githubsearch,
     iconSun,
     iconMoon,
+    instagram,
+    linkedin,
+    github_svg,
+    codepen,
+    simonHero,
+    git_mobile,
+    tailwindcss_mobile,
+    react_mobile,
+    javascript_mobile,
+    sass_mobile,
 }

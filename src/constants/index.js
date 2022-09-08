@@ -1,4 +1,4 @@
-import { html5, css, javascript, react, tailwindcss, bootstrap, styled_components, sass, git, github, spanish, english, german, payapi, scoot, maker, pod, myteam, officelite, devjobs, githubsearch, easybank } from "../assets";
+import { html5, css, javascript, react, tailwindcss, bootstrap, styled_components, sass, git, github, spanish, english, german, payapi, scoot, maker, pod, myteam, officelite, devjobs, githubsearch, easybank, instagram, linkedin, github_svg, codepen } from "../assets";
 
 export const navLinks = [
     {
@@ -20,6 +20,33 @@ export const navLinks = [
     {
       id: "contact",
       title: "Contact",
+    },
+  ];
+
+export const socialLinks = [
+    {
+      id: "instagram",
+      title: "Instagram",
+      icon: instagram,
+      link: "https://instagram.com/simonhb97/",
+    },
+    {
+      id: "linkedin",
+      title: "Linkedin",
+      icon: linkedin,
+      link: "https://linkedin.com/in/simonhernandezbarboza/",
+    },
+    {
+      id: "github",
+      title: "Github",
+      icon: github_svg,
+      link: "https://github.com/simonhernandez",
+    },
+    {
+      id: "codepen",
+      title: "Codepen",
+      icon: codepen,
+      link: "https://codepen.io/simonhernandez",
     },
   ];
 

@@ -9,12 +9,12 @@ export const spacing = {
 }
 
 export const typography = {
-    heading1 : "font-ubuntu_mono text-dark font-bold text-4xl md:text-7xl",
-    heading2 : "font-ubuntu_mono text-dark font-bold text-2xl md:text-5xl",
-    heading3 : "font-ubuntu_mono text-dark font-bold text-xl md:text-4xl",
-    heading4 : "font-ubuntu_mono text-dark font-bold text-xl md:text-2xl",
-    paragraph: "font-ubuntu_mono text-dark font-normal text-sm md:text-base",
-    text_sm  : "font-ubuntu_mono text-dark text-xs md:text-sm",
+    heading1 : "font-ubuntu_mono text-dark font-bold text-4xl ss:text-6xl",
+    heading2 : "font-ubuntu_mono text-dark font-bold text-2xl ss:text-5xl",
+    heading3 : "font-ubuntu_mono text-dark font-bold text-xl ss:text-4xl",
+    heading4 : "font-ubuntu_mono text-dark font-bold text-xl ss:text-2xl",
+    paragraph: "font-ubuntu_mono text-dark font-normal text-sm ss:text-base",
+    text_sm  : "font-ubuntu_mono text-dark text-xs ss:text-sm",
 }
 
 export const flex = {
@@ -24,7 +24,7 @@ export const flex = {
 
 export const layout = {
     section: `flex flex-col md:flex-row ${spacing.paddingX} ${spacing.paddingY}`,
-    sectionReverse: `flex flex-col-reverse md:flex-row ${spacing.paddingX} ${spacing.paddingY}`,
+    sectionReverse: `flex flex-col-reverse md:flex-row `,
 
     sectionImgReverse: `flex-1 flex ${flex.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
     sectionImg: `flex-1 flex ${flex.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
@@ -33,5 +33,9 @@ export const layout = {
 
     header: `${spacing.headerHeight} fixed top-0 left-0 right-0 z-50 shadow-header bg-primary_very_light w-full`,
 
-    navbar: `flex justify-between items-center h-full`
+    navbar: `flex justify-between items-center h-full`,
+
+    button: `bg-primary text-white text-sm font-bold rounded py-1 px-4 uppercase tracking-widest`,
+
+    home: `mt-16 sm:mt-20`
 }

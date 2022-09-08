@@ -1,8 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Hero, About, Skills, Portfolio, Contact } from '../components';
+
+import { layout } from '../styles/style';
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <main className={`${layout.home}`}>
+      <Hero />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Contact />
+    </main>
   )
 }
 
