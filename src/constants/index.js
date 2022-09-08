@@ -93,7 +93,7 @@ export const skills = [
     {
         id: "skill-7",
         icon: styled_components,
-        title: "styled components",
+        title: "styled C.",
     },
     {
         id: "skill-8",
