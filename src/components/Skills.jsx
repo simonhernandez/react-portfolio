@@ -41,7 +41,7 @@ const Skills = () => {
                   return (
                     <li key={skill.id} className="flex flex-col justify-center items-center">
                       <div className="bg-white w-[80px] h-[80px] rounded-full shadow-md flex justify-center items-center">
-                        <img src={skill.icon} alt="html" />
+                        <img src={skill.icon} alt="skill" />
                       </div>
                       <small className="capitalize">{skill.title}</small>
                     </li>
@@ -71,7 +71,7 @@ const Skills = () => {
                   return (
                     <li key={language.id} className="flex flex-col justify-center items-center">
                       <div className="bg-white w-[80px] h-[80px] rounded-full shadow-md flex justify-center items-center">
-                        <img src={language.icon} alt="html" />
+                        <img src={language.icon} alt="language" />
                       </div>
                       <small className="capitalize">{language.title}</small>
                     </li>
