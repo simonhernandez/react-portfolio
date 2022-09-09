@@ -11,6 +11,8 @@ import Wrapper from "./Wrapper";
 import Navbar from "./Navbar";
 import Button from "./Button";
 import Socials from "./Socials";
+import Timeline from "./Timeline";
+import TimelineItem from "./TimelineItem";
 
 export {
     About,
@@ -26,4 +28,6 @@ export {
     Navbar,
     Button,
     Socials,
+    Timeline,
+    TimelineItem,
 }
