@@ -47,7 +47,7 @@ const About = () => {
                 </li>
                 <li class="mr-2">
                   <button
-                    class="inline-flex p-4 rounded-t-lg border-b-2 border-b-primary"
+                    class="inline-flex p-4 rounded-t-lg border-b-2 border-b-primary text-primary bg-primary_very_light"
                     aria-current="page"
                   >
                     <svg

@@ -50,12 +50,54 @@ export const socialLinks = [
     },
   ];
 
-export const timelineItems = [
+export const about = [
     {
-        id: "lorem",
-        title: "lorem",
-        subtitle: "lorem",
-        date: "lorem",
+        id: "education",
+        title: "Education",
+        info: [
+          {
+            id: 0,
+            title: "title",
+            subtitle: "subtitle",
+            date: "18/08/1997",
+          },
+          {
+            id: 1,
+            title: "title",
+            subtitle: "subtitle",
+            date: "18/08/1997",
+          },
+          {
+            id: 2,
+            title: "title",
+            subtitle: "subtitle",
+            date: "18/08/1997",
+          },
+        ]
+    },
+    {
+        id: "work",
+        title: "Work",
+        info: [
+          {
+            id: 0,
+            title: "title",
+            subtitle: "subtitle",
+            date: "18/08/1997",
+          },
+          {
+            id: 1,
+            title: "title",
+            subtitle: "subtitle",
+            date: "18/08/1997",
+          },
+          {
+            id: 2,
+            title: "title",
+            subtitle: "subtitle",
+            date: "18/08/1997",
+          },
+        ]
     }
 ];
 
