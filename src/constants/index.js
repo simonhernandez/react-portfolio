@@ -52,7 +52,7 @@ export const socialLinks = [
 
 export const about = [
     {
-        id: "education",
+        id: 0,
         title: "Education",
         info: [
           {
@@ -76,7 +76,7 @@ export const about = [
         ]
     },
     {
-        id: "work",
+        id: 1,
         title: "Work",
         info: [
           {
