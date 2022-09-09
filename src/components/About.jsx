@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Wrapper } from "../components";
 import { layout, typography, spacing } from "../styles/style";
-import { skills, about } from "../constants";
+import { about } from "../constants";
 import { simonHero } from "../assets";
 
 const About = () => {
