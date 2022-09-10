@@ -125,7 +125,6 @@ a{
 
 .timeline-item{
   max-width: 275px;
-  margin-right: auto;
   position: relative;
 }
 
@@ -137,7 +136,8 @@ a{
   height: 25px;
   background-color: #FF5353;
   border-radius: 50%;
-  left: calc(100% + 20px);
+  top: 8px;
+  right: calc(100% + 20px);
 }
 
 .timeline-item:not(:last-child)::after {
@@ -146,14 +146,14 @@ a{
     position: absolute;
     width: 2px;
     height: calc(100% + 36px);
-    background-color: #FF5353;
-    left: calc(100% + 32.5px);
-    top: 0;
+    background-color: rgba(255,94,94,.3);
+    right: calc(100% + 30.5px);
+    top: 8px;
 }
 
 @media screen and (min-width: 660px) {
   .timeline-item{
     max-width: 300px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
