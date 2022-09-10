@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const TimelineItem = () => {
+import { typography } from '../styles/style';
+
+const TimelineItem = ({title, subtitle, date}) => {
   return (
-    <div>TimelineItem</div>
+    <>
+        <h4 className={`${typography.heading4}`}>{title}</h4>
+        <p>{subtitle}</p>
+        <small>{date}</small>
+    </>
   )
 }
 
