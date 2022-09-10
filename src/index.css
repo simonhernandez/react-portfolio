@@ -120,3 +120,40 @@ a{
 .toggle-btn.toggle > div:nth-child(2){
   opacity: 0;
 }
+
+/* Timeline */
+
+.timeline-item{
+  max-width: 275px;
+  margin-right: auto;
+  position: relative;
+}
+
+.timeline-item::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #FF5353;
+  border-radius: 50%;
+  left: calc(100% + 20px);
+}
+
+.timeline-item:not(:last-child)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: calc(100% + 36px);
+    background-color: #FF5353;
+    left: calc(100% + 32.5px);
+    top: 0;
+}
+
+@media screen and (min-width: 660px) {
+  .timeline-item{
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
