@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Wrapper } from "../components";
+import { Wrapper, Timeline } from "../components";
 import { layout, typography, spacing } from "../styles/style";
 import { about } from "../constants";
 import { simonHero } from "../assets";
@@ -50,7 +50,7 @@ const About = () => {
                 })}
               </ul>
             </div>
-            <div>{currentTab && <div>{currentTab.title}</div>}</div>
+            <div>{currentTab && <Timeline aboutInfoArray={about[currentIndex].info}/>}</div>
           </div>
 
           {/* image-container */}
