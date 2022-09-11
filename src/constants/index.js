@@ -57,21 +57,21 @@ export const about = [
         info: [
           {
             id: 0,
-            title: "title",
-            subtitle: "subtitle",
-            date: "18/08/1997",
+            title: "telecommunications engineering",
+            subtitle: "universidad católica andrés bello",
+            date: "oct. 2014 - oct. 2018",
           },
           {
             id: 1,
-            title: "title",
-            subtitle: "subtitle",
-            date: "18/08/1997",
+            title: "web development",
+            subtitle: "platzi",
+            date: "mar. 2020 - nov. 2020",
           },
           {
             id: 2,
-            title: "title",
-            subtitle: "subtitle",
-            date: "18/08/1997",
+            title: "web development",
+            subtitle: "coursera",
+            date: "may. 2022 - oct. 2022",
           },
         ]
     },
@@ -81,21 +81,21 @@ export const about = [
         info: [
           {
             id: 0,
-            title: "title",
-            subtitle: "subtitle",
-            date: "18/08/1997",
+            title: "implementation & support engineer",
+            subtitle: "soutec LC.",
+            date: "jun. 2018 - mar. 2020",
           },
           {
             id: 1,
-            title: "title",
-            subtitle: "subtitle",
-            date: "18/08/1997",
+            title: "freelance web developer",
+            subtitle: "freelance",
+            date: "nov. 2020 - oct. 2021",
           },
           {
             id: 2,
-            title: "title",
-            subtitle: "subtitle",
-            date: "18/08/1997",
+            title: "implementation & support engineer",
+            subtitle: "soutec LC.",
+            date: "nov. 2021 - may. 2022",
           },
         ]
     }
