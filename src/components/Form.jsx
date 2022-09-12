@@ -2,9 +2,9 @@ import React from 'react'
 
 import { typography } from '../styles/style'
 
-const Form = () => {
+const Form = ({styles}) => {
   return (
-    <form action="https://formspree.io/f/mgepnbjb" method="POST" id="contactForm" className="bg-white rounded-2xl p-6 shadow-form space-y-6 ss:max-w-[540px]" data-aos="fade-left" data-aos-duration="1000">
+    <form action="https://formspree.io/f/mgepnbjb" method="POST" id="contactForm" className={`${styles} bg-white rounded-2xl p-6 shadow-form space-y-6 ss:max-w-[540px] form`} data-aos="fade-left" data-aos-duration="1000">
                     <h3 className={`${typography.heading3}`}>Send me a message!</h3>
 
                     <div className="form__control form__control--name">
