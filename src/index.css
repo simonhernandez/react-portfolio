@@ -1,6 +1,6 @@
 /* Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 
 /* Tailwind */
 
@@ -22,7 +22,7 @@
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul,
-ol{
+ol {
   list-style: none;
 }
 
@@ -33,7 +33,7 @@ html:focus-within {
 
 /* Base font size */
 html {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /* Set core body defaults */
@@ -59,9 +59,9 @@ picture {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -74,21 +74,20 @@ picture {
 
 /* My resets */
 
-button{
+button {
   cursor: pointer;
   outline: none;
   background: none;
 }
 
-body{
+body {
   background-color: var(--color-bg-body);
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-
 
 /* Toggle Button */
 
@@ -106,92 +105,96 @@ a{
   height: 2px;
   background-color: #000;
   transform-origin: left;
-  transition: all .25s;
+  transition: all 0.25s;
 }
 
-.toggle-btn.toggle > div:first-of-type{
+.toggle-btn.toggle > div:first-of-type {
   transform: rotate(45deg);
 }
 
-.toggle-btn.toggle > div:last-of-type{
+.toggle-btn.toggle > div:last-of-type {
   transform: rotate(-45deg);
 }
 
-.toggle-btn.toggle > div:nth-child(2){
+.toggle-btn.toggle > div:nth-child(2) {
   opacity: 0;
 }
 
 /* Timeline */
 
-.timeline-item{
+.timeline-item {
   max-width: 275px;
   position: relative;
 }
 
-.timeline-item::before{
-  content: '';
+.timeline-item::before {
+  content: "";
   display: block;
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: #FF5353;
+  background-color: #ff5353;
   border-radius: 50%;
   top: 8px;
   right: calc(100% + 20px);
 }
 
 .timeline-item:not(:last-child)::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 2px;
-    height: calc(100% + 36px);
-    background-color: rgba(255,94,94,.3);
-    right: calc(100% + 30.5px);
-    top: 8px;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: calc(100% + 36px);
+  background-color: rgba(255, 94, 94, 0.3);
+  right: calc(100% + 30.5px);
+  top: 8px;
 }
 
 @media screen and (min-width: 660px) {
-  .timeline-item{
+  .timeline-item {
     max-width: 300px;
     /* margin: 0 auto; */
   }
 }
 
 /* Form */
-.form{
-  max-width: 33.75rem;
 
-        /* Grid Properties */
+@media screen and (min-width: 660px) {
+  .form {
+    max-width: 33.75rem;
 
-        display: grid;
-        grid-template-areas: "title title"
-                             "name email"
-                             "subject subject"
-                             "message message"
-                             "btn status";
+    /* Grid Properties */
 
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-}
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "name email"
+      "subject subject"
+      "message message"
+      "btn status";
 
-.form > *:not(:last-child){
-  margin-bottom: initial;
-}
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 
-.form h3{
-  grid-area: title;
-}
+  .form > *:not(:last-child) {
+    margin-bottom: initial;
+  }
 
-.form .form__control--name{
-  grid-area: name;
-}
-.form .form__control--email{
-  grid-area: email;
-}
-.form .form__control--subject{
-  grid-area: subject;
-}
-.form .form__control--message{
-  grid-area: message;
+  .form h3 {
+    grid-area: title;
+  }
+
+  .form .form__control--name {
+    grid-area: name;
+  }
+  .form .form__control--email {
+    grid-area: email;
+  }
+  .form .form__control--subject {
+    grid-area: subject;
+  }
+  .form .form__control--message {
+    grid-area: message;
+  }
 }
