@@ -157,3 +157,41 @@ a{
     /* margin: 0 auto; */
   }
 }
+
+/* Form */
+.form{
+  max-width: 33.75rem;
+
+        /* Grid Properties */
+
+        display: grid;
+        grid-template-areas: "title title"
+                             "name email"
+                             "subject subject"
+                             "message message"
+                             "btn status";
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+}
+
+.form > *:not(:last-child){
+  margin-bottom: initial;
+}
+
+.form h3{
+  grid-area: title;
+}
+
+.form .form__control--name{
+  grid-area: name;
+}
+.form .form__control--email{
+  grid-area: email;
+}
+.form .form__control--subject{
+  grid-area: subject;
+}
+.form .form__control--message{
+  grid-area: message;
+}
