@@ -194,7 +194,16 @@ a {
   .form .form__control--subject {
     grid-area: subject;
   }
-  .form .form__control--message {
+  .form .form__control--text {
     grid-area: message;
+  }
+
+  .form .form__status {
+    grid-area: status;
+  }
+
+  .form .btn{
+    grid-area: btn;
+    width: 70%;
   }
 }

@@ -4,7 +4,7 @@ import { typography } from '../styles/style'
 
 const Form = ({styles}) => {
   return (
-    <form action="https://formspree.io/f/mgepnbjb" method="POST" id="contactForm" className={`${styles} bg-white rounded-2xl p-6 shadow-form space-y-6 ss:max-w-[540px] form`} data-aos="fade-left" data-aos-duration="1000">
+    <form action="https://formspree.io/f/mgepnbjb" method="POST" id="contactForm" className={`${styles} bg-white rounded-2xl p-6 shadow-form space-y-1 ss:max-w-[540px] form`} data-aos="fade-left" data-aos-duration="1000">
                     <h3 className={`${typography.heading3}`}>Send me a message!</h3>
 
                     <div className="form__control form__control--name">
@@ -20,10 +20,10 @@ const Form = ({styles}) => {
                     </div>
 
                     <div className="form__control form__control--text">
-                        <textarea name="message" id="textarea" className=' py-2 px-3 bg-slate-100 rounded-lg w-full focus:border-primary focus:outline-primary' cols="30" rows="10" placeholder="Message" required></textarea>
+                        <textarea name="message" id="textarea" className=' py-2 px-3 bg-slate-100 rounded-lg w-full focus:border-primary focus:outline-primary' cols="30" rows="5" placeholder="Message" required></textarea>
                     </div>
 
-                    <button type="submit" className="btn btn--primary btn--small" id="formBtn">SEND</button>
+                    <button type="submit" className="btn bg-primary text-white py-2 rounded-md" id="formBtn">SEND</button>
 
                     <p className="form__status text-orange" id="formStatus"></p>
                 </form>
