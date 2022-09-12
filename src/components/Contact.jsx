@@ -7,15 +7,15 @@ const Contact = () => {
   return (
     <section
       id="section"
-      className={`${spacing.paddingY} bg-primary_very_light`}
+      className={`${spacing.paddingY} bg-primary_very_light text-center md:text-left`}
     >
-      <Wrapper styles={`${layout.wrapper}`}>
+      <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
         <header className="text-center">
           <h2 className={typography.heading2}>Contact</h2>
         </header>
 
-        <div>
-          <div className="space-y-2">
+        <div className="space-y-6 md:flex">
+          <div className="space-y-2 flex-1">
             <h2 className={`${typography.heading2} text-primary`}>
               Get in touch
             </h2>
@@ -24,7 +24,7 @@ const Contact = () => {
               shoot me an email or send me a message to my Whatsapp or Telegram,
               anytime. I will get back to you as soon as possible.
             </p>
-            <address className="space-y-4">
+            <address className="space-y-4 text-left">
               <div className="flex gap-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const Contact = () => {
             </address>
           </div>
 
-          <div>
+          <div className="flex-1">
             <Form />
           </div>
         </div>
