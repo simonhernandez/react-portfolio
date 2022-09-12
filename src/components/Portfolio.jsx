@@ -1,9 +1,39 @@
-import React from 'react'
+import React from "react";
+
+import { Wrapper } from "../components";
+import { layout, typography, spacing } from "../styles/style";
+import { projects } from "../constants";
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
-  )
-}
+    <section
+      id="portfolio"
+      className={`${spacing.paddingY} text-center md:text-left`}
+    >
+      <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
+        <header className="text-center max-w-xs mx-auto">
+          <h2 className={typography.heading2}>Portfolio</h2>
+          <p>
+            Here you will find some of my best work on frontend web development.
+          </p>
+        </header>
 
-export default Portfolio
+        <div></div>
+
+        <div>
+          <ul>
+            {projects.map((project, index) =>{
+              return (
+                <li key={project.id}>
+                  <Project {...project} />
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      </Wrapper>
+    </section>
+  );
+};
+
+export default Portfolio;
