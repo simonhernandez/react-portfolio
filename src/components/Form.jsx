@@ -20,7 +20,7 @@ const Form = () => {
                     </div>
 
                     <div className="form__control form__control--text">
-                        <textarea name="message" id="textarea" className=' py-2 px-3 bg-slate-100 rounded-lg w-full focus:border-primary focus:outline-primary' cols="30" rows="10" className="form__textarea" placeholder="Message" required></textarea>
+                        <textarea name="message" id="textarea" className=' py-2 px-3 bg-slate-100 rounded-lg w-full focus:border-primary focus:outline-primary' cols="30" rows="10" placeholder="Message" required></textarea>
                     </div>
 
                     <button type="submit" className="btn btn--primary btn--small" id="formBtn">SEND</button>
