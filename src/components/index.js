@@ -13,6 +13,7 @@ import Button from "./Button";
 import Socials from "./Socials";
 import Timeline from "./Timeline";
 import TimelineItem from "./TimelineItem";
+import Form from "./Form";
 
 export {
     About,
@@ -30,4 +31,5 @@ export {
     Socials,
     Timeline,
     TimelineItem,
+    Form
 }
