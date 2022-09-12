@@ -14,7 +14,7 @@ const Contact = () => {
           <h2 className={typography.heading2}>Contact</h2>
         </header>
 
-        <div className="space-y-6 md:flex">
+        <div className="space-y-6 md:flex md:space-y-0">
           <div className="space-y-2 flex-1">
             <h2 className={`${typography.heading2} text-primary`}>
               Get in touch
@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
 
           <div className="flex-1">
-            <Form />
+            <Form styles={`mx-auto md:mx-0 md:ml-auto`} />
           </div>
         </div>
       </Wrapper>
