@@ -21,7 +21,7 @@ const Portfolio = () => {
         <div></div>
 
         <div>
-          <ul>
+          <ul className="flex flex-wrap justify-between gap-8">
             {projects.map((project, index) =>{
               return (
                 <li key={project.id}>
