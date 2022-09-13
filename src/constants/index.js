@@ -261,4 +261,15 @@ export const projects = [
             site: 'http://payapi.vercel.app/',
         },
     },
+    {
+        id: "project-9",
+        img: payapi,
+        title: 'PayAPI',
+        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        technologies: ['html', 'scss', 'js'],
+        link: {
+            repo: 'https://github.com/simonhernandez/payapi',
+            site: 'http://payapi.vercel.app/',
+        },
+    },
 ];
