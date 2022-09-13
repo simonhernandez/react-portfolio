@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Wrapper } from "../components";
+import { Wrapper, Project } from "../components";
 import { layout, typography, spacing } from "../styles/style";
 import { projects } from "../constants";
 

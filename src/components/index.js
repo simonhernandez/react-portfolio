@@ -14,6 +14,7 @@ import Socials from "./Socials";
 import Timeline from "./Timeline";
 import TimelineItem from "./TimelineItem";
 import Form from "./Form";
+import Project from "./Project";
 
 export {
     About,
@@ -31,5 +32,6 @@ export {
     Socials,
     Timeline,
     TimelineItem,
-    Form
+    Form,
+    Project
 }
