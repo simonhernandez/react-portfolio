@@ -157,6 +157,15 @@ a {
   }
 }
 
+/* Portfolio */
+.project:hover img{
+  transform: scale(1.1);
+}
+
+.project img{
+  transition: all .35s ease-out;
+}
+
 /* Form */
 
 @media screen and (min-width: 660px) {
