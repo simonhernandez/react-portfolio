@@ -184,4 +184,81 @@ export const projects = [
             site: 'http://payapi.vercel.app/',
         },
     },
+    {
+        id: "project-2",
+        img: payapi,
+        title: 'PayAPI',
+        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        technologies: ['html', 'scss', 'js'],
+        link: {
+            repo: 'https://github.com/simonhernandez/payapi',
+            site: 'http://payapi.vercel.app/',
+        },
+    },
+    {
+        id: "project-3",
+        img: payapi,
+        title: 'PayAPI',
+        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        technologies: ['html', 'scss', 'js'],
+        link: {
+            repo: 'https://github.com/simonhernandez/payapi',
+            site: 'http://payapi.vercel.app/',
+        },
+    },
+    {
+        id: "project-4",
+        img: payapi,
+        title: 'PayAPI',
+        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        technologies: ['html', 'scss', 'js'],
+        link: {
+            repo: 'https://github.com/simonhernandez/payapi',
+            site: 'http://payapi.vercel.app/',
+        },
+    },
+    {
+        id: "project-5",
+        img: payapi,
+        title: 'PayAPI',
+        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        technologies: ['html', 'scss', 'js'],
+        link: {
+            repo: 'https://github.com/simonhernandez/payapi',
+            site: 'http://payapi.vercel.app/',
+        },
+    },
+    {
+        id: "project-6",
+        img: payapi,
+        title: 'PayAPI',
+        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        technologies: ['html', 'scss', 'js'],
+        link: {
+            repo: 'https://github.com/simonhernandez/payapi',
+            site: 'http://payapi.vercel.app/',
+        },
+    },
+    {
+        id: "project-7",
+        img: payapi,
+        title: 'PayAPI',
+        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        technologies: ['html', 'scss', 'js'],
+        link: {
+            repo: 'https://github.com/simonhernandez/payapi',
+            site: 'http://payapi.vercel.app/',
+        },
+    },
+    {
+        id: "project-8",
+        img: payapi,
+        title: 'PayAPI',
+        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        technologies: ['html', 'scss', 'js'],
+        link: {
+            repo: 'https://github.com/simonhernandez/payapi',
+            site: 'http://payapi.vercel.app/',
+        },
+    },
 ];
