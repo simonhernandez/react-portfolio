@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Wrapper, Project } from "../components";
 import { layout, typography, spacing } from "../styles/style";
 import { projects } from "../constants";
 
 const Portfolio = () => {
+  const [currentStartIndex, setCurrentStartIndex] = useState(0)
+  const MAX_SHOWN_CARDS = 4;
+
   return (
     <section
       id="portfolio"
@@ -21,13 +24,13 @@ const Portfolio = () => {
         <div></div>
 
         <div>
-          <ul className="flex flex-wrap justify-between gap-8">
-            {projects.map((project, index) =>{
+          <ul className="flex flex-wrap justify-around gap-y-8 gap-x-0">
+            {projects.slice(currentStartIndex, currentStartIndex +  MAX_SHOWN_CARDS).map((project, index) => {
               return (
                 <li key={project.id}>
                   <Project {...project} />
                 </li>
-              )
+              );
             })}
           </ul>
         </div>
