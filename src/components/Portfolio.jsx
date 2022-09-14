@@ -5,7 +5,7 @@ import { layout, typography, spacing } from "../styles/style";
 import { projects } from "../constants";
 
 const Portfolio = () => {
-  const [currentStartIndex, setCurrentStartIndex] = useState(0)
+  const [currentStartIndex, setCurrentStartIndex] = useState(0);
   const MAX_SHOWN_CARDS = 4;
 
   return (
@@ -25,14 +25,38 @@ const Portfolio = () => {
 
         <div>
           <ul className="flex flex-wrap justify-around gap-y-8 gap-x-0">
-            {projects.slice(currentStartIndex, currentStartIndex +  MAX_SHOWN_CARDS).map((project, index) => {
-              return (
-                <li key={project.id}>
-                  <Project {...project} />
-                </li>
-              );
-            })}
+            {projects
+              .slice(currentStartIndex, currentStartIndex + MAX_SHOWN_CARDS)
+              .map((project, index) => {
+                return (
+                  <li key={project.id}>
+                    <Project {...project} />
+                  </li>
+                );
+              })}
           </ul>
+          <div className="flex justify-between mt-4">
+            <button
+              onClick={() =>
+                setCurrentStartIndex((prev) =>
+                  currentStartIndex === 0 ? 0 : prev - 1
+                )
+              }
+            >
+              left
+            </button>
+            <button
+              onClick={() =>
+                setCurrentStartIndex((prev) =>
+                  currentStartIndex === projects.length - MAX_SHOWN_CARDS
+                    ? prev
+                    : prev + 1
+                )
+              }
+            >
+              right
+            </button>
+          </div>
         </div>
       </Wrapper>
     </section>
