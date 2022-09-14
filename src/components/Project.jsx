@@ -15,12 +15,12 @@ const Project = ({ id, img, title, description, technologies, link }) => {
         <ul className="flex justify-start items-center">
           {technologies.map((technology, index) => {
             return (
-                <li key={index} className={`bg-primary_light py-[2.777px] px-[8.333px] rounded-sm text-xs font-bold text-primary ${technologies.length - 1 !== index ? 'mr-1' : ''}`}>{technology}</li>
+                <li key={index} className={`bg-primary_light py-[2.777px] px-[8.333px] rounded-sm text-[12px] font-bold text-primary ${technologies.length - 1 !== index ? 'mr-1' : ''}`}>{technology}</li>
             )
           })}
         </ul>
 
-        <h4 className={`${typography.heading4}`}>{title}</h4>
+        <h4 className={`${typography.heading4} truncate`}>{title}</h4>
 
         <p className={`text-[12px] h-[50px] overflow-hidden relative`}>
           {description}
