@@ -3,7 +3,7 @@ import { typography } from "../styles/style";
 
 const Project = ({ id, img, title, description, technologies, link }) => {
   return (
-    <div className="project min-w-[300px] max-w-[350px] mx-auto shadow-lg rounded-2xl overflow-hidden text-left md:col-span-6 lg:col-span-4">
+    <div className="project min-w-[200px] max-w-[250px] mx-auto shadow-lg rounded-2xl overflow-hidden text-left md:col-span-6 lg:col-span-4">
       <div className="overflow-hidden">
         <img
           src={img}
@@ -22,8 +22,9 @@ const Project = ({ id, img, title, description, technologies, link }) => {
 
         <h4 className={`${typography.heading4}`}>{title}</h4>
 
-        <p className={`${typography.text_sm}`}>
+        <p className={`text-[12px] h-[50px] overflow-hidden relative`}>
           {description}
+          <div className="absolute -bottom-1 right-0">...</div>
         </p>
 
         <div className="flex justify-between items-center">
@@ -32,7 +33,7 @@ const Project = ({ id, img, title, description, technologies, link }) => {
             className="btn btn--ghost btn--small w-[48%] flex justify-center items-center border border-primary rounded-sm py-2"
             target="_blank"
           >
-            <span className="text-xs mr-2 uppercase text-primary font-bold">View Code</span>
+            <span className="text-[12px] mr-2 uppercase text-primary font-bold">View Code</span>
             <i className="bx bx-link-external"></i>
           </a>
 
@@ -41,7 +42,7 @@ const Project = ({ id, img, title, description, technologies, link }) => {
             className="btn btn--ghost btn--small w-[48%] flex justify-center items-center border border-primary rounded-sm py-2"
             target="_blank"
           >
-            <span className="text-xs mr-2 uppercase text-primary font-bold">View Site</span>
+            <span className="text-[12px] mr-2 uppercase text-primary font-bold">View Site</span>
             <i className="bx bx-link-external"></i>
           </a>
         </div>
