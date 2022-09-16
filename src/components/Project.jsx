@@ -3,7 +3,7 @@ import { typography } from "../styles/style";
 
 const Project = ({ id, img, title, description, technologies, link }) => {
   return (
-    <div className="project min-w-[200px] max-w-[250px] mx-auto shadow-lg rounded-2xl overflow-hidden text-left md:col-span-6 lg:col-span-4">
+    <div className="project w-[250px] mx-auto shadow-lg rounded-2xl overflow-hidden text-left md:col-span-6 lg:col-span-4">
       <div className="overflow-hidden">
         <img
           src={img}

@@ -24,7 +24,7 @@ const Portfolio = () => {
         <div></div>
 
         <div className="relative">
-          <ul className="flex flex-wrap justify-center gap-y-8 gap-x-4">
+          <ul className="flex flex-wrap justify-center gap-y-8 gap-x-4 overflow-hidden">
             {projects
               .slice(currentStartIndex, currentStartIndex + MAX_SHOWN_CARDS)
               .map((project, index) => {
