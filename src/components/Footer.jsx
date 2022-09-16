@@ -35,7 +35,7 @@ const Footer = () => {
         </nav>
 
         <div className="flex justify-center items-center">
-          <Socials socials={socialLinks} styles={`flex gap-4`} />
+          <Socials socials={socialLinks} styles={`flex gap-4`} color={'white'} />
         </div>
       </Wrapper>
     </footer>

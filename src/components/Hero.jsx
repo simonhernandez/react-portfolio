@@ -20,7 +20,7 @@ const Hero = () => {
             Want to work together?{" "}
             <strong className="text-primary">Contact me</strong>
           </p>
-          <Socials socials={socialLinks} styles={`flex gap-1`} />
+          <Socials socials={socialLinks} styles={`flex gap-1`} color={'gray'} />
         </div>
 
         {/* Image Container */}
