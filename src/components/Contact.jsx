@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
 
           <div className="flex-1">
-            <Form styles={`mx-auto md:mx-0 md:ml-auto`} />
+            <Form styles={`mx-auto md:mx-0 md:ml-auto shadow-md`} />
           </div>
         </div>
       </Wrapper>
