@@ -37,6 +37,10 @@ import javascript_mobile from "./img/javascript_mobile.png";
 import sass_mobile from "./img/sass_mobile.png";
 import frontend from "./img/frontend.svg";
 import languages_svg from "./img/languages.svg";
+import about_01 from "./img/about_01.webp";
+import about_02 from "./img/about_02.webp";
+import about_03 from "./img/about_03.webp";
+import about_04 from "./img/about_04.webp";
 
 import { ReactComponent as Instagram } from "./img/instagram.svg";
 import { ReactComponent as Linkedin } from "./img/linkedin.svg";
@@ -84,5 +88,9 @@ export {
   Instagram,
   Linkedin,
   Github,
-  Codepen
+  Codepen,
+  about_01,
+  about_02,
+  about_03,
+  about_04
 };
