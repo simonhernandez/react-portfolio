@@ -4,14 +4,14 @@ import { typography } from "../styles/style";
 const Project = ({ id, img, title, description, technologies, link }) => {
   return (
     <div className="project w-[250px] mx-auto shadow-lg rounded-2xl overflow-hidden text-left md:col-span-6 lg:col-span-4">
-      <div className="overflow-hidden">
+      <div className="overflow-hidden h-[120px]">
         <img
           src={img}
           alt={`A Preview Image of a the ${title} Project`}
         />
       </div>
 
-      <div className="p-2 space-y-2 md:p-4">
+      <div className="p-4 space-y-2">
         <ul className="flex justify-start items-center">
           {technologies.map((technology, index) => {
             return (
