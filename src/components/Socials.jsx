@@ -7,7 +7,7 @@ const Socials = ({ socials, styles, color }) => {
       {socials.map((social) => {
         return (
           <li key={social.id}>
-            <a href={social.link} target="_blank">
+            <a href={social.link} target="_blank" className="social-link">
               { social.id === 'instagram' && <Instagram fill={color} />}
               { social.id === 'linkedin' && <Linkedin fill={color} />}
               { social.id === 'github' && <Github fill={color} />}

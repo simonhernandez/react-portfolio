@@ -216,3 +216,8 @@ a {
     width: 70%;
   }
 }
+
+/* Svg hover */
+.social-link > svg:hover{
+  fill: #ff5353;
+}
