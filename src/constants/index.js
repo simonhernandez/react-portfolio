@@ -100,6 +100,40 @@ export const about = [
         ]
     }
 ];
+export const aboutInfo = [
+  {
+    id: 0,
+    title: "about-01",
+    alt: "A photo of Simon graduating as a Telecom Engineer",
+    text: "... a 25 year old Frontend Developer with a Bachelor's degree in Telecommunications Engineering.",
+    image: about_02,
+    image_description: "The day I graduated as Telecommunications Engineer. (Top of my class)",
+  },
+  {
+    id: 1,
+    title: "about-02",
+    alt: "A photo of Simon receiving an award for best student of Telecommunications School",
+    text: "Throughout my college years I received multiple awards for standing out as as one of the best students from Engineering School.",
+    image: about_01,
+    image_description: "Dean Francisco J. Virtuoso (UCAB) handing me the award for best student in the Telecommunications Engineering School.",
+  },
+  {
+    id: 2,
+    title: "about-03",
+    alt: "A photo of one of the awards Simon won for best Telecom student",
+    text: "I was awarded best student for the Telecommunications Engineering School five (5) times in a row.",
+    image: about_03,
+    image_description: "One of the awards I received for being in the TOP 10 of best students.",
+  },
+  {
+    id: 3,
+    title: "about-04",
+    alt: "A photo of Simon working with his coworkers in a Meeting",
+    text: "I am proactive, organized and self-taught, capable of performing tasks that require team work, problem solving, and strong communication skills.",
+    image: about_04,
+    image_description: "",
+  },
+];
 
 export const skills = [
     {
