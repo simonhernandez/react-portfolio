@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
@@ -20,17 +21,17 @@ module.exports = {
         ubuntu_mono: ["Ubuntu Mono", "sans-serif"],
       },
       boxShadow: {
-        'header': '0 1px 6px 0 rgba(32, 33, 36, 0.28)',
-      }
+        header: "0 1px 6px 0 rgba(32, 33, 36, 0.28)",
+      },
     },
-    screens : {
+    screens: {
       xs: "480px",
       ss: "620px",
       sm: "768px",
       md: "1060px",
       lg: "1200px",
       xl: "1700px",
-    }
+    },
   },
-  plugins: [],
-}
+  plugins: [require("flowbite/plugin")],
+};

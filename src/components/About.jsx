@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Wrapper, Timeline } from "../components";
 import { layout, typography, spacing } from "../styles/style";
 import { about } from "../constants";
-import { simonHero } from "../assets";
+import { simonHero, about_01, about_02, about_03 } from "../assets";
 
 const About = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,7 +87,7 @@ const About = () => {
                   data-carousel-item=""
                 >
                   <img
-                    src={simonHero}
+                    src={about_01}
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                     alt="..."
                   />
@@ -98,7 +98,7 @@ const About = () => {
                   data-carousel-item=""
                 >
                   <img
-                    src={simonHero}
+                    src={about_02}
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                     alt="..."
                   />
