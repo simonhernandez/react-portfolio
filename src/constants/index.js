@@ -1,4 +1,4 @@
-import { html5, css, javascript, react, tailwindcss, bootstrap, styled_components, sass, git, github, spanish, english, german, payapi, scoot, maker, pod, myteam, officelite, devjobs, githubsearch, easybank, instagram, linkedin, github_svg, codepen, Instagram } from "../assets";
+import { html5, css, javascript, react, tailwindcss, bootstrap, styled_components, sass, git, github, spanish, english, german, payapi, scoot, maker, pod, myteam, officelite, devjobs, githubsearch, easybank, instagram, linkedin, github_svg, codepen, about_01, about_02, about_03, about_04 } from "../assets";
 
 export const navLinks = [
     {
