@@ -36,7 +36,7 @@ const Skills = () => {
               organized and well-written code.
             </p>
             <div>
-              <ul className="flex flex-wrap justify-between">
+              <ul className="flex flex-wrap justify-between gap-1">
                 {skills.map((skill) => {
                   return (
                     <li key={skill.id} className="flex flex-col justify-center items-center">
