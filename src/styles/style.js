@@ -29,7 +29,7 @@ export const layout = {
     sectionImgReverse: `flex-1 flex ${flex.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
     sectionImg: `flex-1 flex ${flex.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
 
-    wrapper: 'w-full h-[inherit] max-w-[1200px] my-0 mx-auto bg-transparent px-[2rem] sm:px-[2.4375rem] md:px-[2rem]',
+    wrapper: 'w-full h-[inherit] max-w-[1200px] my-0 mx-auto bg-transparent px-[1.5rem] sm:px-[2.4375rem] md:px-[2rem]',
 
     header: `${spacing.headerHeight} fixed top-0 left-0 right-0 z-50 shadow-header bg-primary_very_light w-full`,
 
