@@ -8,6 +8,7 @@ import { simonHero, about_01, about_02, about_03 } from "../assets";
 
 const About = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const photoArr = [about_01, about_02, about_03];
   const currentTab = about.find((aboutItem) => {
     return aboutItem.id === currentIndex;
   });
@@ -29,7 +30,7 @@ const About = () => {
               <img src={about_02} alt="" className="object-fill"/>
               <img src={about_03} alt="" className="object-fill"/>
             </Carousel> */}
-            <Carousel />
+            <Carousel photoArr={photoArr}/>
           </div>
 
           {/* image-container */}
