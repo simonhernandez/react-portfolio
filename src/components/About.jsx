@@ -3,12 +3,9 @@ import React, { useState } from "react";
 import { Wrapper, Timeline, Carousel } from "../components";
 import { layout, typography, spacing } from "../styles/style";
 import { about, aboutInfo } from "../constants";
-import { simonHero, about_01, about_02, about_03 } from "../assets";
 
 const About = () => {
   const [startIndex, setStartIndex] = useState(0);
-  const photoArr = [about_01, about_02, about_03];
-
 
   return (
     <section
@@ -22,7 +19,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row md:justify-between md:gap-10">
           {/* text-container */}
           <div className="flex-1 h-56 sm:h-64 xl:h-80 2xl:h-96">
-            <Carousel info={aboutInfo} startIndex={startIndex} setStartIndex={setStartIndex}/>
+            <Carousel info={aboutInfo} startIndex={startIndex} setStartIndex={setStartIndex} style={``}/>
           </div>
 
           {/* image-container */}

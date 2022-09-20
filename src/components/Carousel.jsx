@@ -5,7 +5,7 @@ const Carousel = ({info, startIndex, setStartIndex, style}) => {
   return (
     <div className={`${style} relative`}>
       {/* <!-- Carousel wrapper --> */}
-      <div className="relative h-64 overflow-hidden rounded-lg">
+      <div className="relative h-[15.5rem] overflow-hidden rounded-lg">
         {info.map((item, index) => {
           return (
             <div
@@ -15,7 +15,7 @@ const Carousel = ({info, startIndex, setStartIndex, style}) => {
                 transform: `translateX(${100 * (index - startIndex)}%)`,
               }}
             >
-              <img src={item.image} alt="..." />
+              <img src={item.image} alt="..." className="object-cover"/>
             </div>
           );
         })}
