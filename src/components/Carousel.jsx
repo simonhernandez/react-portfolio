@@ -5,7 +5,7 @@ const Carousel = ({info, startIndex, setStartIndex, style}) => {
   return (
     <div className={`${style} relative`}>
       {/* <!-- Carousel wrapper --> */}
-      <div className="relative h-[15.5rem] overflow-hidden rounded-lg">
+      <div className="relative h-36 ss:h-48 md:h-[15.5rem] overflow-hidden rounded-lg">
         {info.map((item, index) => {
           return (
             <div
@@ -22,11 +22,11 @@ const Carousel = ({info, startIndex, setStartIndex, style}) => {
       </div>
 
       {/* <!-- Slider indicators --> */}
-      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-3 left-1/2">
         {info.map((item, index) => (
           <button
             type="button"
-            className={`w-3 h-3 rounded-full ${
+            className={`w-2 h-2 md:w-3 md:h-3 rounded-full ${
               index === startIndex
                 ? "bg-white dark:bg-gray-800"
                 : "bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"

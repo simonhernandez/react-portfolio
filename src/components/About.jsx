@@ -19,7 +19,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row md:justify-between md:gap-10">
           {/* text-container */}
           <div className="flex-1 h-56 sm:h-64 xl:h-80 2xl:h-96">
-            <Carousel info={aboutInfo} startIndex={startIndex} setStartIndex={setStartIndex} style={``}/>
+            <Carousel info={aboutInfo} startIndex={startIndex} setStartIndex={setStartIndex} style={`mb-6 max-w-[430px] mx-auto md:max-w-none md:mb-0`}/>
           </div>
 
           {/* image-container */}
