@@ -105,7 +105,7 @@ export const aboutInfo = [
     id: 0,
     title: "about-01",
     alt: "A photo of Simon graduating as a Telecom Engineer",
-    text: "... a 25 year old Frontend Developer with a Bachelor's degree in Telecommunications Engineering.",
+    text: "... a 25 year old Frontend Developer with a Bachelor's degree in Telecommunications Engineering.\n I graduted in 4 years (1 year sooner than average) with outstanding grades, being top of my class, as well as the youngest to do so (at age 21).",
     image: about_02,
     image_description: "The day I graduated as Telecommunications Engineer. (Top of my class)",
   },
