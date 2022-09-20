@@ -15,6 +15,7 @@ import Timeline from "./Timeline";
 import TimelineItem from "./TimelineItem";
 import Form from "./Form";
 import Project from "./Project";
+import Carousel from "./Carousel";
 
 export {
     About,
@@ -33,5 +34,6 @@ export {
     Timeline,
     TimelineItem,
     Form,
-    Project
+    Project,
+    Carousel
 }
