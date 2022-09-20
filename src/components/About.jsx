@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-// import {Carousel} from 'flowbite-react'
 
 import { Wrapper, Timeline, Carousel } from "../components";
 import { layout, typography, spacing } from "../styles/style";
-import { about } from "../constants";
+import { about, aboutInfo } from "../constants";
 import { simonHero, about_01, about_02, about_03 } from "../assets";
 
 const About = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [startIndex, setStartIndex] = useState(0);
   const photoArr = [about_01, about_02, about_03];
-  const currentTab = about.find((aboutItem) => {
-    return aboutItem.id === currentIndex;
-  });
+
 
   return (
     <section
@@ -25,11 +22,6 @@ const About = () => {
         <div className="flex flex-col md:flex-row md:justify-between md:gap-10">
           {/* text-container */}
           <div className="flex-1 h-56 sm:h-64 xl:h-80 2xl:h-96">
-            {/* <Carousel slideInterval={5000}>
-              <img src={about_01} alt="" className="object-fill"/>
-              <img src={about_02} alt="" className="object-fill"/>
-              <img src={about_03} alt="" className="object-fill"/>
-            </Carousel> */}
             <Carousel photoArr={photoArr}/>
           </div>
 
@@ -38,16 +30,13 @@ const About = () => {
             <h3 className={`${typography.heading3}`}>
               I am <span className="text-primary">Simon Hernandez</span>
             </h3>
-            <p>
-              ... a 23 year old Frontend Developer with a Bachelor's Degree in
-              Telecommunication Engineering.
-            </p>
-            <p>
-              I am proactive, organized and self-taught, capable of performing
-              tasks that require team work, problem solving, and strong
-              communication skills.
-            </p>
-            <p>Passionate about web technologies, telematics and baseball.</p>
+            {aboutInfo.map((item, index) => {
+              return (
+                <p>{index === startIndex && item.text}</p>
+              )
+            })}
+
+
           </div>
         </div>
       </Wrapper>
