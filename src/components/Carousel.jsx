@@ -43,7 +43,7 @@ const Carousel = ({photoArr}) => {
         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev=""
         onClick={() =>
-          setStartIndex((prev) => (prev !== 0 ? prev - 1 : arr.length - 1))
+          setStartIndex((prev) => (prev !== 0 ? prev - 1 : photoArr.length - 1))
         }
       >
         <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-primary/60 dark:bg-gray-800/30 group-hover:bg-primary/40 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -70,7 +70,7 @@ const Carousel = ({photoArr}) => {
         className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next=""
         onClick={() =>
-          setStartIndex((prev) => (prev !== arr.length - 1 ? prev + 1 : 0))
+          setStartIndex((prev) => (prev !== photoArr.length - 1 ? prev + 1 : 0))
         }
       >
         <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-primary/60 dark:bg-gray-800/30 group-hover:bg-primary/40 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-gray-800/70 group-focus:outline-none">
