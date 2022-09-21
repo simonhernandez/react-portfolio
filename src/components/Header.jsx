@@ -6,7 +6,7 @@ import { layout } from "../styles/style";
 
 const Header = () => {
   return (
-    <header className={`${layout.header}`}>
+    <header className={`${layout.header} dark:bg-dark_100`}>
       <Wrapper styles={layout.wrapper}>
         <Navbar />
       </Wrapper>

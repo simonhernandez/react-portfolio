@@ -7,7 +7,7 @@ import { simonHero, dots, tailwindcss_mobile, react_mobile, javascript_mobile, s
 
 const Hero = () => {
   return (
-    <section id="home" className={`${spacing.paddingY} bg-primary_very_light`}>
+    <section id="home" className={`${spacing.paddingY} bg-primary_very_light dark:bg-dark_200`}>
       <Wrapper styles={`${layout.wrapper} flex flex-col-reverse md:flex-row md:justify-between md:items-center`}>
         {/* Text Container */}
         <div className="space-y-2 ss:space-y-4">

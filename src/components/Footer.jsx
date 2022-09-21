@@ -6,7 +6,7 @@ import { navLinks, socialLinks } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className={`${spacing.paddingY} text-center md:text-left bg-dark text-white`}>
+    <footer className={`${spacing.paddingY} text-center md:text-left bg-dark_100 text-white`}>
       <Wrapper styles={`${layout.wrapper} flex flex-col space-y-10 md:flex-row md:justify-between md:items-center md:space-y-0`}>
         <div className="brand">
           <h2 className={`${typography.heading2} text-primary`}>

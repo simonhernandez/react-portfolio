@@ -14,6 +14,8 @@ module.exports = {
         primary_very_light: "#FFFAFA",
         white: "#FFF",
         dark: "#242942",
+        dark_100: "rgb(30,42,71)",
+        dark_200: "rgb(20,29,47)",
         gray: "rgba(237, 242, 246, .75)",
         gray_light: "rgba(235, 237, 244, .4)",
         gray_dark: "#979797",

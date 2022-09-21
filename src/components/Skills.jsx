@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className={`${spacing.paddingY} bg-primary_very_light text-center md:text-left`}
+      className={`${spacing.paddingY} bg-primary_very_light text-center md:text-left dark:bg-dark_200`}
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
         <header className="text-center">

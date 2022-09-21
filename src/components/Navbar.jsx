@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import { layout, typography } from "../styles/style";
 import { navLinks } from "../constants";
 import { iconSun, iconMoon } from "../assets";
+import useDarkMode from "../hooks/useDarkMode";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [colorTheme, setTheme] = useDarkMode();
 
   return (
     <nav className={`${layout.navbar}`}>
@@ -31,8 +33,8 @@ const Navbar = () => {
           })}
         </ul>
 
-        <button onClick={() => setToggle((prev) => !prev)}>
-          {toggle ? <img src={iconSun} /> : <img src={iconMoon} />}
+        <button onClick={() => setTheme(colorTheme)}>
+          {colorTheme === 'light' ? <img src={iconSun} /> : <img src={iconMoon} />}
         </button>
       </div>
 
@@ -50,8 +52,8 @@ const Navbar = () => {
           })}
         </ul>
 
-        <button onClick={() => setToggle((prev) => !prev)}>
-          {toggle ? <img src={iconSun} /> : <img src={iconMoon} />}
+        <button onClick={() => setTheme(colorTheme)}>
+        {colorTheme === 'light' ? <img src={iconSun} /> : <img src={iconMoon} />}
         </button>
       </div>
 
