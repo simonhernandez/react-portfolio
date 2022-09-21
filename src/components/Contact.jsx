@@ -6,7 +6,7 @@ import { typography, layout, spacing } from "../styles/style";
 const Contact = () => {
   return (
     <section
-      id="section"
+      id="contact"
       className={`${spacing.paddingY} bg-primary_very_light text-center md:text-left`}
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
