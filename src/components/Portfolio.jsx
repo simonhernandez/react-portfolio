@@ -15,7 +15,7 @@ const Portfolio = () => {
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-8`}>
         <header className="text-center max-w-xs mx-auto">
-          <h2 className={typography.heading2}>Portfolio</h2>
+          <h2 className={`${typography.heading2} heading-underline`}>Portfolio</h2>
           <p>
             Here you will find some of my best work on frontend web development.
           </p>

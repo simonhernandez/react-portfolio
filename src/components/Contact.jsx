@@ -11,7 +11,7 @@ const Contact = () => {
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
         <header className="text-center">
-          <h2 className={typography.heading2}>Contact</h2>
+          <h2 className={`${typography.heading2} heading-underline`}>Contact</h2>
         </header>
 
         <div className="space-y-6 md:flex md:space-y-0">

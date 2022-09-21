@@ -13,7 +13,7 @@ const Skills = () => {
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
         <header className="text-center">
-          <h2 className={typography.heading2}>Skills</h2>
+          <h2 className={`${typography.heading2} heading-underline`}>Skills</h2>
         </header>
 
         <section className="space-y-8 md:flex md:flex-row-reverse md:justify-between md:space-y-0">

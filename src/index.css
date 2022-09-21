@@ -221,3 +221,22 @@ a {
 .social-link > svg:hover{
   fill: #ff5353;
 }
+
+/* Title underline */
+.heading-underline {
+  position: relative;
+  display: inline-flex;
+  z-index: 1;
+}
+
+.heading-underline::before {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: -5%;
+  margin: 0 auto;
+  width: 110%;
+  height: 8px;
+  background-color: #ff53539a;
+  z-index: -10;
+}

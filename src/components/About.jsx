@@ -14,7 +14,7 @@ const About = () => {
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
         <header className="text-center">
-          <h2 className={typography.heading2}>About me</h2>
+          <h2 className={`${typography.heading2} heading-underline`}>About me</h2>
         </header>
         <div className="flex flex-col md:flex-row md:justify-between md:gap-10">
           {/* text-container */}
