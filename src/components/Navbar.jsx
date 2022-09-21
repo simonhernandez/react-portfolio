@@ -16,7 +16,7 @@ const Navbar = () => {
       </a>
 
       <div
-        className={`fixed ss:hidden top-16 ${toggle ? 'right-0' : 'right-[-80%]'} bottom-0 w-4/5 bg-dark text-white p-4 transition-all duartion-500 flex flex-col justify-between items-center`}
+        className={`fixed ss:hidden top-16 ${toggle ? 'right-0' : 'right-[-80%]'} bottom-0 w-4/5 bg-dark_200 text-white p-4 transition-all duartion-500 flex flex-col justify-between items-center`}
       >
         <ul>
           {navLinks.map((navlink, index) => {
