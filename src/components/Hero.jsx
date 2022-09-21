@@ -18,7 +18,7 @@ const Hero = () => {
           <Button styles={layout.button}>Download CV</Button>
           <p className="text-sm">
             Want to work together?{" "}
-            <strong className="text-primary">Contact me</strong>
+            <strong className="text-primary"><a href="#contact" className="hover:underline underline-offset-2">Contact me</a></strong>
           </p>
           <Socials socials={socialLinks} styles={`flex gap-1`} color={'gray'} />
         </div>
