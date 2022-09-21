@@ -13,7 +13,7 @@ const Portfolio = () => {
       id="portfolio"
       className={`${spacing.paddingY} text-center md:text-left`}
     >
-      <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
+      <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-8`}>
         <header className="text-center max-w-xs mx-auto">
           <h2 className={typography.heading2}>Portfolio</h2>
           <p>
@@ -21,7 +21,7 @@ const Portfolio = () => {
           </p>
         </header>
 
-        <div></div>
+        {/* <div></div> */}
 
         <div className="relative">
           <ul className="flex flex-wrap justify-center gap-y-8 gap-x-4 overflow-hidden py-4">
@@ -35,30 +35,64 @@ const Portfolio = () => {
                 );
               })}
           </ul>
+          
+          <div className="flex justify-center mt-4">
           <button
-          className="absolute -left-4 top-0 bottom-0 my-auto text-[32px] text-primary bg-primary_very_light w-10 h-10 rounded-full border-primary border-2 flex justify-center items-center shadow-md"
-              onClick={() =>
-                setCurrentStartIndex((prev) =>
-                  currentStartIndex === 0 ? 0 : prev - 1
-                )
-              }
-            >
-              {'<'}
-            </button>
-            <button
-            className="absolute -right-4 top-0 bottom-0 my-auto text-[32px] text-primary bg-primary_very_light w-10 h-10 rounded-full border-primary border-2 flex justify-center items-center shadow-md"
-              onClick={() =>
-                setCurrentStartIndex((prev) =>
-                  currentStartIndex === projects.length - MAX_SHOWN_CARDS
-                    ? prev
-                    : prev + 1
-                )
-              }
-            >
-              {'>'}
-            </button>
-          <div className="flex justify-between mt-4">
-            
+            className=" top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            onClick={() =>
+              setCurrentStartIndex((prev) =>
+                currentStartIndex === 0 ? 0 : prev - 1
+              )
+            }
+          >
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-primary/60 dark:bg-gray-800/30 group-hover:bg-primary/40 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            className=" top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            onClick={() =>
+              setCurrentStartIndex((prev) =>
+                currentStartIndex === projects.length - MAX_SHOWN_CARDS
+                  ? prev
+                  : prev + 1
+              )
+            }
+          >
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-primary/60 dark:bg-gray-800/30 group-hover:bg-primary/40 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg
+                aria-hidden="true"
+                className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span className="sr-only">Next</span>
+            </span>
+          </button>
           </div>
         </div>
       </Wrapper>
