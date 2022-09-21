@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className={`${spacing.paddingY} text-center md:text-left dark:bg-dark_100`}
+      className={`${spacing.paddingY} text-center md:text-left dark:bg-dark_100 transition duration-500`}
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
         <header className="text-center">

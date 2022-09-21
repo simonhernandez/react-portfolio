@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className={`${spacing.paddingY} bg-primary_very_light text-center md:text-left dark:bg-dark_200`}
+      className={`${spacing.paddingY} bg-primary_very_light text-center md:text-left dark:bg-dark_200 transition duration-500`}
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-24`}>
         <header className="text-center">

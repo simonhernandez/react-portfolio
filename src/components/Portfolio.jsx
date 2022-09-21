@@ -11,7 +11,7 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className={`${spacing.paddingY} text-center md:text-left dark:bg-dark_100`}
+      className={`${spacing.paddingY} text-center md:text-left dark:bg-dark_100 transition duration-500`}
     >
       <Wrapper styles={`${layout.wrapper} space-y-8 md:space-y-8`}>
         <header className="text-center max-w-xs mx-auto">

@@ -37,5 +37,5 @@ export const layout = {
 
     button: `bg-primary text-white text-sm font-bold rounded py-2 px-4 uppercase tracking-widest hover:opacity-80 transition`,
 
-    home: `mt-16 sm:mt-20`
+    home: `mt-16`
 }
