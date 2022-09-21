@@ -5,6 +5,7 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
