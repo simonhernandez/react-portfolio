@@ -26,13 +26,9 @@ ol {
   list-style: none;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
 /* Base font size */
 html {
+  scroll-behavior: smooth;
   font-size: 18px;
 }
 
