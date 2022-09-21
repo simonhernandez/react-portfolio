@@ -39,7 +39,7 @@ const Skills = () => {
               <ul className="flex flex-wrap justify-between gap-1">
                 {skills.map((skill) => {
                   return (
-                    <li key={skill.id} className="flex flex-col justify-center items-center">
+                    <li key={skill.id} className="flex flex-col justify-center items-center hover:-translate-y-2 transition hover:text-primary">
                       <div className="bg-white w-[80px] h-[80px] rounded-full shadow-md flex justify-center items-center">
                         <img src={skill.icon} alt="skill" />
                       </div>
@@ -69,7 +69,7 @@ const Skills = () => {
               <ul className="flex flex-wrap justify-between md:justify-start md:gap-4">
                 {languages.map((language) => {
                   return (
-                    <li key={language.id} className="flex flex-col justify-center items-center">
+                    <li key={language.id} className="flex flex-col justify-center items-center hover:-translate-y-2 transition hover:text-primary">
                       <div className="bg-white w-[80px] h-[80px] rounded-full shadow-md flex justify-center items-center">
                         <img src={language.icon} alt="language" />
                       </div>
