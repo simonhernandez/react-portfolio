@@ -99,9 +99,17 @@ a {
 .toggle-btn > div {
   width: 100%;
   height: 2px;
-  background-color: #000;
+  /* background-color: #000; */
   transform-origin: left;
   transition: all 0.25s;
+}
+
+.toggle-btn-light > div {
+  background-color: #000;
+}
+
+.toggle-btn-dark > div {
+  background-color: #fff;
 }
 
 .toggle-btn.toggle > div:first-of-type {

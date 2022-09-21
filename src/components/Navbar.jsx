@@ -57,7 +57,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      <button className={`toggle-btn ${toggle ? 'toggle' : ''} block ss:hidden`} onClick={() => setToggle((prev) => !prev)}>
+      <button className={`toggle-btn ${colorTheme === 'light' ? 'toggle-btn-dark' : 'dark:toggle-btn-light'}  ${toggle ? 'toggle' : ''} block ss:hidden`} onClick={() => setToggle((prev) => !prev)}>
         <div></div>
         <div></div>
         <div></div>
