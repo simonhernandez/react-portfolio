@@ -35,7 +35,7 @@ export const layout = {
 
     navbar: `flex justify-between items-center h-full`,
 
-    button: `bg-primary text-white text-sm font-bold rounded py-1 px-4 uppercase tracking-widest`,
+    button: `bg-primary text-white text-sm font-bold rounded py-2 px-4 uppercase tracking-widest`,
 
     home: `mt-16 sm:mt-20`
 }
