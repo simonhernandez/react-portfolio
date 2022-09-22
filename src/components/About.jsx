@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Wrapper, Timeline, Carousel } from "../components";
 import { layout, typography, spacing } from "../styles/style";
@@ -6,6 +6,14 @@ import { about, aboutInfo } from "../constants";
 
 const About = () => {
   const [startIndex, setStartIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStartIndex((prev) => (prev !== aboutInfo.length - 1 ? prev + 1 : 0))
+    }, 4000);
+  
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section
