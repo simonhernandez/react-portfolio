@@ -24,20 +24,20 @@ const About = () => {
         <header className="text-center">
           <h2 className={`${typography.heading2} heading-underline`}>About me</h2>
         </header>
-        <div className="flex flex-col md:flex-row md:justify-between md:gap-10">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start md:gap-10">
           {/* text-container */}
           <div className="flex-1 h-56 sm:h-64 xl:h-80 2xl:h-96">
             <Carousel info={aboutInfo} startIndex={startIndex} setStartIndex={setStartIndex} style={`mb-6 max-w-[430px] mx-auto md:max-w-none md:mb-0`}/>
           </div>
 
           {/* image-container */}
-          <div className="space-y-4 w-full max-w-[550px] m-auto">
+          <div className="space-y-4 w-full max-w-[550px] mx-auto">
             <h3 className={`${typography.heading3}`}>
               I am <span className="text-primary">Simon Hernandez</span>
             </h3>
             {aboutInfo.map((item, index) => {
               return (
-                <p>{index === startIndex && item.text}</p>
+                index === startIndex && <p className=" min-h-[30px]">{item.text}</p>
               )
             })}
 
