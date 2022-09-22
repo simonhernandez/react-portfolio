@@ -10,7 +10,7 @@ const About = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setStartIndex((prev) => (prev !== aboutInfo.length - 1 ? prev + 1 : 0))
-    }, 6000);
+    }, 8000);
   
     return () => clearInterval(interval);
   }, []);
