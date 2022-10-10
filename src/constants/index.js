@@ -113,7 +113,7 @@ export const aboutInfo = [
     id: 1,
     title: "about-02",
     alt: "A photo of Simon receiving an award for best student of Telecommunications School",
-    text: "Throughout my college years I received multiple awards for standing out as as one of the best students from Engineering School.",
+    text: "Throughout my college years I received multiple awards for standing out as as one of the best students in the Telecommunications Engineering School (UCAB).",
     image: about_01,
     image_description: "Dean Francisco J. Virtuoso (UCAB) handing me the award for best student in the Telecommunications Engineering School.",
   },
@@ -233,7 +233,7 @@ export const projects = [
         id: "project-3",
         img: devjobs,
         title: 'devjobs',
-        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        description: 'SPA Web App built on ReactJS, that allows users to find their ideal job, based on filtering and sorting criteria.',
         technologies: ['react', 'tailwind', 'react-router'],
         link: {
             repo: 'https://github.com/simonhernandez/devjobs-dashboard',
@@ -243,8 +243,8 @@ export const projects = [
     {
         id: "project-4",
         img: easybank,
-        title: 'easybank',
-        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        title: 'Easybank',
+        description: 'Single page website that showcases Easybank, a banking institution that helps users with their spending, saving, budgeting, investing, and much more..',
         technologies: ['react', 'scss', 'mobile-first'],
         link: {
             repo: 'https://github.com/simonhernandez/easybank',
@@ -277,7 +277,7 @@ export const projects = [
         id: "project-7",
         img: githubsearch,
         title: 'Github Search',
-        description: 'Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.',
+        description: 'SPA Web App that fetches Github profiles making use of the API provided by Github.',
         technologies: ['react', 'tailwind', 'axios'],
         link: {
             repo: 'https://github.com/simonhernandez/githubsearch',
